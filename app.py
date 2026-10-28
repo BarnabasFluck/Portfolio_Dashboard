@@ -68,10 +68,10 @@ def run_simulation(file_bytes, risk, initial, recurring, freq, years, n_sims):
 # --------------------------------------------------------------------------- #
 with st.sidebar:
     st.header("Your plan")
-    initial = st.number_input("Amount invested today (USD)", min_value=0.0, value=100_000.0,
+    initial = st.number_input("Amount invested today (USD)", min_value=0.0, value=1_000_000.0,
                               step=1_000.0, format="%.0f")
 
-    recurring_on = st.toggle("Add recurring payments", value=True)
+    recurring_on = st.toggle("Add recurring payments", value=False)
     recurring, freq = 0.0, "Monthly"
     if recurring_on:
         c1, c2 = st.columns([1.2, 1])
