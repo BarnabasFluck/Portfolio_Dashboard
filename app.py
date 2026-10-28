@@ -124,11 +124,11 @@ real_factor = (1 + inflation) ** -years
 # --------------------------------------------------------------------------- #
 # Header
 # --------------------------------------------------------------------------- #
-st.title("Portfolio planner")
+st.title("Portfolio Planner")
 st.markdown(
     f"<div class='subtitle'>LMT, TXN, KO and the 5-year US Treasury, with an optional put on the "
     f"S&P 500 · market data {stats.returns.index[0]:%b %Y} – {stats.returns.index[-1]:%b %Y} "
-    f"from your workbook</div>",
+    f"from Excel workbook</div>",
     unsafe_allow_html=True,
 )
 
